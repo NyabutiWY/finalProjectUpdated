@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basil Crop</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Kiambu suitability App</h1>
+      </div>
+    </header>
+
+    <section class="mapping-and-info">
+      <div>
+        <nav>
+          <div class="search-container">
+            <div class="search-box">
+              <div class="row">
+                <input
+                  type="text"
+                  placeholder="Search sublocation"
+                  name="search"
+                  autocomplete="off"
+                  id="search-input"
+                />
+                <button class="btn" type="button" value="">
+                  <ion-icon name="search-outline" class="fa"></ion-icon>
+                </button>
+                <button id="getLocationBtn">Get My Location</button>
+                <p id="locationInfo"></p>
+              </div>
+            </div>
+            <div class="result-box"></div>
+          </div>
+        </nav>
+        <div style="margin-top: 2rem">
+          <div id="map"></div>
+        </div>
+      </div>
+
+      <div class="about">
+        <img
+          class="basil-img"
+          src="organic-basil-sweet.webp"
+          alt="image of basil crop"
+        />
+        <p>
+          Basil (Ocimum basilicum L.), belonging to the Lamiaceae family, is an
+          annual spicy plant generally utilized as a flavouring agent for food.
+          It's particularly appreciated in cuisine for its distinctive aroma.
+          Basil is mainly used as a spice but is also considered a main
+          ingredient in certain preparations, such as “Pesto Genovese”. (Romano
+          et al,.2022).
+        </p>
+      </div>
+    </section>
+    <section>
+      <footer>
+        <p class="copyright">copyright&copy;</p>
+      </footer>
+    </section>
+    <!-- Latest Turf.js version -->
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@latest/turf.min.js"></script>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
