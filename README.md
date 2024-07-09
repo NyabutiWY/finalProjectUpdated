@@ -1,3 +1,4 @@
+![site-preview](./preview.png)
 # Kiambu Suitability App
 
 The Kiambu Suitability App helps you determine the suitability of different sublocations in Kiambu for growing basil. This application uses geolocation to find your current location and provides information on the suitability of the sublocation for basil farming.
